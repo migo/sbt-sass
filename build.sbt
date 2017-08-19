@@ -4,7 +4,7 @@ version := "1.0.0"
 
 sbtPlugin := true
 
-scalaVersion := "2.10.6"
+scalaVersion := "2.12.3"
 scalacOptions ++= Seq(
   "-unchecked",
   "-Xlint",
@@ -13,13 +13,12 @@ scalacOptions ++= Seq(
   "-feature",
   "-encoding", "UTF-8"
 )
-incOptions := incOptions.value.withNameHashing(nameHashing = true)
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.2.2")
+addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.4.2")
 
 libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.4" withJavadoc()
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.5" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % "test"
 
 // Publishing options
 // ==================
