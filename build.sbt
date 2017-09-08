@@ -1,6 +1,6 @@
 name := "sbt-sass"
 organization := "org.madoushi.sbt"
-version := "1.0.0"
+version := "2.0.0"
 
 sbtPlugin := true
 
@@ -14,7 +14,7 @@ scalacOptions ++= Seq(
   "-encoding", "UTF-8"
 )
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.4.2")
+addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.4.3")
 
 libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.4" withJavadoc()
 
